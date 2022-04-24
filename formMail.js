@@ -20,7 +20,7 @@ $("sendMail").on("click", function(){
     $("errorMess").text("");
 
     $.ajax({
-        url: 'ajax/mail.php',
+        url: 'mail.php',
         type: 'POST',
         cache: false,
         data: { 'name': name, 'email': email, 'phone': phone, 'message': message },
